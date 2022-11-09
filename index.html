@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brianne Siemsen">
+    <meta name="description" content="Come play Tic-Tac-Toe!">
+    <title>Tic-Tac-Toe</title>
+    <meta property="og:image" content="https://github.com/parsnippity/TicTacToe/meta.png">
+    <meta property="og:description" content="Come play Tic-Tac-Toe!">
+    <meta property="og:title" content="Tic-Tac-Toe">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <h2 id="turnHeader"><span id="turn">X</span><span id="turnHeaderEnd">'s Turn!</span></h2>
+    <div id="box">
+        <img id="topLeft" src="./blank.png" onclick="boxClicked('topLeft')">
+        <img id="topMiddle" src="./blank.png" onclick="boxClicked('topMiddle')">
+        <img id="topRight" src="./blank.png" onclick="boxClicked('topRight')">
+        <img id="middleLeft" src="./blank.png" onclick="boxClicked('middleLeft')">
+        <img id="middle" src="./blank.png" onclick="boxClicked('middle')">
+        <img id="middleRight" src="./blank.png" onclick="boxClicked('middleRight')">
+        <img id="bottomLeft" src="./blank.png" onclick="boxClicked('bottomLeft')">
+        <img id="bottomMiddle" src="./blank.png" onclick="boxClicked('bottomMiddle')">
+        <img id="bottomRight" src="./blank.png" onclick="boxClicked('bottomRight')">
+    </div>
+    <button onclick = "resetBoard()"><span class="ex">X</span> Play Again <span class="oh">O</span></button>
+    <h3 class="ex">X's wins: <span id="exWins">0</span></h3>
+    <h3 class="tieColor">Ties: <span id="ties">0</span></h3>
+    <h3 class="oh">O's wins: <span id="ohWins">0</span></h3>
+    <script src="./index.js"></script>
+</body>
+</html>

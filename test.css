@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(200, 191, 231);
+    font-family: "Lobster", fantasy;
+    text-align: center;
+}
+button {
+    font-family: "Lobster", fantasy;
+    background-color: black;
+    color: rgb(163, 73, 164);
+    display: block;
+    margin: auto;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 5px solid black;
+}
+h1 {
+    font-size: 72px;
+    font-weight: normal;
+    margin: 15px;
+}
+h2 {
+    font-weight: normal;
+    font-size: 54px;
+    margin: 15px;
+}
+h3 {
+    font-weight: normal;
+    display: inline;
+    margin: 15px;
+    font-size: 36px;
+}
+
+.oh {
+    color: rgb(0, 162, 232);
+}
+.ex {
+    color: rgb(63, 72, 204);
+}
+.tieColor {
+    color: rgb(163, 73, 164);
+}
+
+#box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    max-width: 431px;
+    margin: auto;
+}
+
+#topLeft, #topMiddle, #middleLeft, #middle, #bottomLeft, #bottomMiddle {
+    border-right: 5px solid black;
+}
+
+#topLeft, #topMiddle, #topRight, #middleLeft, #middle, #middleRight {
+    border-bottom: 5px solid black;
+}
+
+#middleLeft, #middle, #middleRight, #bottomLeft, #bottomMiddle, #bottomRight {
+    border-top: 5px solid black;
+}
+
+#topRight, #topMiddle, #middleRight, #middle, #bottomRight, #bottomMiddle {
+    border-left: 5px solid black;
+}
+
+#topRight, #middleRight, #bottomRight {
+    border-right: 5px solid rgba(200, 191, 231, 0);
+}
+
+#topLeft, #middleLeft, #bottomLeft {
+    border-left: 5px solid rgba(200, 191, 231, 0);
+}
+
+#topRight, #topMiddle, #topLeft {
+    border-top: 5px solid rgba(200, 191, 231, 0);
+}
+
+#bottomLeft, #bottomMiddle, #bottomRight {
+    border-bottom: 5px solid rgba(200, 191, 231, 0);
+}
+
+#turnHeader {
+    color:rgb(63, 72, 204);
+}
